@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0; 
+    
+}
+
+.logo {
+    margin-right: 20px;
+   
+}
+
+header .logo img {
+    /* Certifique-se de que não há outras regras CSS que anulem o tamanho da imagem */
+    width: 180px;
+    height: 180px;
+    margin-left: -10px;
+    margin-bottom: 650px;
+
+}
+
+.nome {
+    margin: -25px 0 0 0;
+    margin-left: -40px; /*Distancia entre o nome e a logo*/
+    margin-bottom: 690px; /*Altura do nome*/
+    font-size: 14px;
+}
+
+.nome h1 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+header .nome h1  {
+    margin-right: 10px;
+    color: #d0525c;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 20px 4%; /*Espaçamento "inicio sobre*/
+}
+
+header .menu-desktop {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens do menu à esquerda */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #d24c80;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 5.1px;
+}
+
+.btn-icones {
+    display: flex;
+    align-items: center;
+}
+
+header .btn-icones button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: #d42332;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    margin-bottom: 610px; /*Altura dos icones*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave para a transformação e para o box-shadow */
+
+}
+
+.btn-icones button:hover {
+    transform: scale(1.05); /* Aumenta a escala em 10% quando o mouse passar por cima */
+    box-shadow: 0 0 10px rgba(252, 11, 111, 0.452); /* Adiciona um efeito de brilho */
+}
+
+header .btn-icones button i {
+    vertical-align: middle;
+    color: #ffffff;      
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 80px; /*LADO*/
+    margin-bottom: 610px; /*CIMA*/
+}
+
+header .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccccccab;
+    border-radius: 50px;
+    width: 400px;
+}
+
+header .search-bar button {
+    position: absolute;
+    right: 5px; /* Posiciona o botão à direita do campo de entrada */
+    height: 900px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar  button i {
+    color: #d42332;
+    font-size: 22px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+
+header .search-bar input:focus {
+    border-color: #d42332; /* Altera a cor de fundo, quando o campo estiver focado */
+    outline: none; /* Remove o contorno padrão do campo de busca */
+}
+
+.menu-desktop {
+    margin-top: 5px; /* Adiciona espaço entre o menu e o começo da pag */
+}
+
+
+/*SubMenu*/
+.categoria-container {
+     margin-top: -600px; /* Ajuste conforme necessário para mover o contêiner de categorias para cima */
+}
+
+.categoria-barra {
+    margin-top: -25px; /*Largura das categorias */
+    background-color: #d42332; /* Cor de fundo para a barra de categorias */
+    box-sizing: border-box;
+    padding: 10px; /*Posição das letras categorias no meio*/
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    
+}
+
+.categoria-barra .submenu-desktop > ul > li.special > a {
+    color: #FFF; /* Cor das palavras das categorias */
+    font-weight: 600;
+}
+
+.categoria-barra .submenu-desktop ul li  {
+    margin: 0 auto; /* Adicione margens automáticas para centralizar */
+    
+}
+
+.submenu-desktop ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.special{
+    position: relative;
+}
+
+.special .drop {
+    /* Remova a largura fixa */
+    width: auto; 
+    height: auto; /* Defina a altura como 'auto' para que o dropdown se ajuste dinamicamente */
+    overflow: hidden;
+    transition: .5s;
+    text-align: left;
+    display: none; /* Esconda o dropdown inicialmente */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFF;
+    z-index: 100;
+   
+}
+
+.special .drop a {
+    display: block;
+    padding: 10px;
+    color: black; /* Cor padrão do texto */
+    transition: color 0.3s; /* Adiciona uma transição suave */
+}
+
+.special .drop a:hover {
+    color: #f87f89 !important; /* Cor do texto quando o mouse passa sobre ele */
+}
+
+.special:hover .drop{
+    display: block;
+    height: auto;
+    transition: .5s;
+}
+
+.special:nth-child(3) .drop {
+    column-count: 2;
+    column-gap: 20px;
+    max-width: 500px;
+}
+
+.special:nth-child(3) .drop a {
+    display: block;
+    word-wrap: break-word;
+    width: 200px; /* Defina um width específico para cada palavra */
+}
+
+
+
+/*Menu Desktop*/
+.menu-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-desktop ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-desktop li{
+    margin: 0px 15px;
+}
+
+/*BOTAO ZAP*/
+
+.icon {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #FFF;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+.icon .fab{
+    padding-top: 9px;
+}
+
+.icon:hover{
+    background-color: #FFF;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
+}
+
+.enter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,#d42332, #d42332 );
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 60px;
+    font-size: 14px !important; /* Reduz o tamanho da fonte */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.enter-button i {
+    font-size: 30px;
+    margin-right: 10px; /* Adiciona espaçamento à direita do ícone */
+}
+
+.enter-button h4{
+    color: #FFF;
+}
+
+
+/*SLIDE*/
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 600%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #f87f89;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #d42332;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #d42332;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
+
+/*Novidade*/
+
+.novidades{
+    padding: 40px 4%;
+}
+
+
+.txt-novidades {
+    text-align: center;
+    padding: 5px 4%; /* Mantendo o padding original */
+    font-size: 30px;
+    color:  #d42332;;
+    margin-top: 200px; /* Adicionando margem superior para mover o texto para baixo */
+    top: 50%; /* Posiciona o elemento no meio verticalmente */
+    left: 50%; /* Posiciona o elemento no meio horizontalmente */
+    transform: translate(0%, -120%);
+    border-bottom: 2px solid #d42332;
+}
+
+.box .img-img {
+    max-width: 100%; /* Adicionado para garantir que a largura máxima da imagem seja 100% */
+    display: block; /* Remove espaçamento extra em volta da imagem */
+    margin: 0 auto;
+    height: auto; /* Adicionado para manter a proporção da imagem */
+    border-radius: 20px;
+}
+
+.container-novidades {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Alterado o valor mínimo da largura para 15rem */
+    gap: 20px;
+    margin-top: -20px;
+}
+
+.btn-novidades {
+    display: inline-block;
+    border: 20px solid #ff0000; /* Adiciona uma borda sólida com a cor rosa */
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-color:4px solid #d42332;
+}
+
+
+/* Estilos para o hover do botão */
+.btn-novidades:hover {
+    background-color: #d42332; /* Altere a cor de fundo do hover conforme necessário */
+    color: aliceblue;
+}
+
+.novidades .box img:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+.container-novidades h2{
+    color: rgb(0, 0, 0);
+}
+
+.container-novidades .box {
+    background-color: #f7cfd2;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 8px rgba(255, 176, 6, 0.144);
+    cursor: pointer;
+    transition: .2s;
+    outline: var(--outline);
+    border: 2px solid #f5b4b9; /* Adiciona uma borda à caixa */
+    border-radius: 8px; /* Arredonda as bordas da caixa */
+}
+
+
+.container-novidades .btn-novidades {
+    border: 1px solid #d42332; /* Adiciona uma borda ao parágrafo e ao botão */
+    border-radius: 8px; /* Arredonda as bordas do parágrafo e do botão */
+    padding: 10px; /* Ajusta o preenchimento para dar espaço dentro das bordas */
+}
+
+.container-novidades .box:hover {
+    transform: scale(1.03); /* Aumenta o tamanho em 10% no hover */
+}
+
+.container-novidades .box i{
+    font-size: 18px;
+}
+
+/*MAIS VENDIDOS*/
+
+.maisvendidos{
+    padding: 20px 4%;
+}
+
+
+.txt-maisvendidos {
+    text-align: center;
+    padding: 5px 4%; /* Mantendo o padding original */
+    font-size: 30px;
+    color:  #d42332;;
+    margin-top: 100px; /* Adicionando margem superior para mover o texto para baixo */
+    top: 50%; /* Posiciona o elemento no meio verticalmente */
+    left: 50%; /* Posiciona o elemento no meio horizontalmente */
+    transform: translate(0%, -120%);
+    border-bottom: 2px solid #d42332;
+}
+
+.box .img-img {
+    max-width: 100%; /* Adicionado para garantir que a largura máxima da imagem seja 100% */
+    display: block; /* Remove espaçamento extra em volta da imagem */
+    margin: 0 auto;
+    height: auto; /* Adicionado para manter a proporção da imagem */
+}
+
+.container-maisvendidos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Alterado o valor mínimo da largura para 15rem */
+    gap: 20px;
+    margin-top: -20px;
+}
+
+.btn-maisvendidos {
+    display: inline-block;
+    border: 2px solid #d42332; /* Adiciona uma borda sólida com a cor rosa */
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Estilos para o hover do botão */
+.btn-maisvendidos:hover {
+    background-color: #d42332; /* Altere a cor de fundo do hover conforme necessário */
+    color: aliceblue;
+}
+
+.maisvendidos .box img:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+.container-maisvendidos h2{
+    color: rgb(0, 0, 0);
+}
+
+.container-maisvendidos .box {
+    padding: 3rem 2rem;
+    box-shadow: 0 0 8px rgba(255, 176, 6, 0.144);
+    cursor: pointer;
+    transition: .2s;
+    outline: var(--outline);
+    border: 2px solid #d4d2d2bd; /* Adiciona uma borda à caixa */
+    border-radius: 8px; /* Arredonda as bordas da caixa */
+}
+
+
+.container-maisvendidos .btn-maisvendidos {
+    border: 1px solid rgb(255, 255, 255); /* Adiciona uma borda ao parágrafo e ao botão */
+    border-radius: 8px; /* Arredonda as bordas do parágrafo e do botão */
+    padding: 10px; /* Ajusta o preenchimento para dar espaço dentro das bordas */
+}
+
+.container-maisvendidos .box:hover {
+    transform: scale(1.03); /* Aumenta o tamanho em 10% no hover */
+}
+
+.container-maisvendidos .box i{
+    font-size: 18px;
+}
+
+/*RODAPÉ*/
+
+footer {
+    background-color: #eaece5;
+    padding: 40px;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alterado para space-between */
+    align-items: flex-start;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adicionado para dar espaço entre logo e redes sociais */
+}
+
+.logo img {
+    width: 170px;
+    height: 170px;
+    
+}
+
+.nome-rodape {
+    margin-left: -40px;
+    margin-bottom: -10px;
+    color: #d42332;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+
+ button  {
+    color: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 25px;
+    margin: 8px; /*Espaçamento entre os icones*/
+}
+
+.container button:hover {
+    color: #d42332;
+}
+
+.redes-sociais {
+    text-align: center;
+    color: #090e0a;
+    margin-left: 800px;
+    margin-top: -175px;
+    flex-basis: 30%; /* Adicionado para definir a largura dos elementos */
+    cursor: pointer;
+}
+
+.redes-sociais p{
+    padding: 3%;
+    font-size: 14px;
+}
+
+.pagamentos{
+    text-align: justify;
+    color: #090e0a;
+    margin-right: 800px;
+    margin-top: 4px;
+    margin-left: 129px;
+    flex-basis: 30%; 
+    flex-direction: column; /* Adicione esta linha para dispor os ícones verticalmente */
+    display: flex;
+    cursor: pointer;
+}
+
+.pagamentos p{
+    font-size: 14PX;
+}
+
+.pagamentos i{
+    cursor: pointer;
+}
+
+.redes-sociais i{
+    cursor: pointer;
+}
+
+
+.fale-conosco{
+    text-align: center;
+    color: #090e0a;
+    margin-left: 450px;
+    margin-top: -175px;
+    flex-basis: 30%; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Adicione esta linha para dispor os ícones verticalmente */
+    text-align: center;
+    
+}
+
+.fale-conosco i{
+     text-align: justify; 
+     cursor: pointer;
+}
+
+.fale-conosco a{
+    text-decoration: none; /* Remove o sublinhado */
+    color: #090e0a; /* Define a cor do texto, ajuste conforme necessário */
+    text-align: center;
+}
+
+.pagamentos a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #090e0a; /* Define a cor do texto, ajuste conforme necessário */
+}
+
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.redes-sociais p {
+    margin: 0;
+}
