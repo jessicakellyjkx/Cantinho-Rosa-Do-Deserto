@@ -12,7 +12,7 @@ body {
 }
 
 .interface {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@ header .menu-desktop {
     align-items: center; /* Alinha os itens verticalmente */
 }
 
-header > .interface {
+header > .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -603,9 +603,10 @@ footer .container {
 }
 
 .logo img {
-    width: 170px;
-    height: 170px;
-    
+    width: 120px; /* Reduzindo da logotipo */
+    height: auto; /* Altura da imagem para ajuste proporcional */
+    margin-left: 0; /* Removendo a margem esquerda */
+    margin-right: 10px; /* Adicionando um espaço à direita do logotipo */
 }
 
 .nome-rodape {
@@ -710,4 +711,28 @@ h2 {
 
 .redes-sociais p {
     margin: 0;
+}
+
+
+/*Reposnividade*/
+
+@media screen and (max-width: 1020px){
+
+    /*Cabeçalho*/
+    .menu-desktop ul, .categoria-barra, .search-bar, .btn-icones{
+        display: none;
+    }
+
+    /*Nome Site*/
+    header .nome h1  {
+        font-size: 20px;
+    }
+
+    img.img-mobile{
+    width: 10px; /* Reduzindo o tamanho da imagem do logotipo */
+    height: auto; /* Permitindo a altura da imagem para ajuste proporcional */
+    margin-left: 0; /* Removendo a margem esquerda */
+    margin-right: 10px; /* Adicionando um espaço à direita do logotipo */
+    }
+
 }
