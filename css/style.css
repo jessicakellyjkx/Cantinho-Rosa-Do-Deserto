@@ -12,7 +12,8 @@ body {
 }
 
 .interface {
-    max-width: 1200px;
+    height: 787px;
+    max-width: 1266px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -22,7 +23,6 @@ body {
 
 .logo {
     margin-right: 20px;
-   
 }
 
 header .logo img {
@@ -55,7 +55,7 @@ header .nome h1  {
 
 /* ESTILO DO CABEÇALHO */
 header {
-    padding: 20px 4%; /*Espaçamento "inicio sobre*/
+    padding: 10px 4%; /*Espaçamento "inicio sobre*/
 }
 
 header .menu-desktop {
