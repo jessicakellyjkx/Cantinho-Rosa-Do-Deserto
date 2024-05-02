@@ -54,11 +54,13 @@ header .nome h1  {
 }
 
 /* ESTILO DO CABEÇALHO */
+
+
 header {
     padding: 10px 4%; /*Espaçamento "inicio sobre*/
 }
 
-header .menu-desktop {
+header .menu-topo {
     font-size: 14px;
     display: flex;
     justify-content: flex-end; /* Alinha os itens do menu à esquerda */
@@ -153,7 +155,7 @@ header .search-bar input:focus {
     outline: none; /* Remove o contorno padrão do campo de busca */
 }
 
-.menu-desktop {
+.menu-topo {
     margin-top: 5px; /* Adiciona espaço entre o menu e o começo da pag */
 }
 
@@ -177,17 +179,17 @@ header .search-bar input:focus {
     
 }
 
-.categoria-barra .submenu-desktop > ul > li.special > a {
+.categoria-barra .submenu-topo > ul > li.special > a {
     color: #FFF; /* Cor das palavras das categorias */
     font-weight: 600;
 }
 
-.categoria-barra .submenu-desktop ul li  {
+.categoria-barra .submenu-topo ul li  {
     margin: 0 auto; /* Adicione margens automáticas para centralizar */
     
 }
 
-.submenu-desktop ul{
+.submenu-topo ul{
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -245,18 +247,18 @@ header .search-bar input:focus {
 
 
 /*Menu Desktop*/
-.menu-desktop{
+.menu-topo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu-desktop ul {
+.menu-topo ul {
     list-style-type: none;
     display: flex;
 }
 
-.menu-desktop li{
+.menu-topo li{
     margin: 0px 15px;
 }
 
@@ -469,7 +471,7 @@ section.slider{
 }
 
 
-.container-novidades h2{
+.-novidades h2{
     color: rgb(0, 0, 0);
 }
 
@@ -721,10 +723,10 @@ h2 {
 
 /*Reposnividade*/
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 480px){
 
     /*Cabeçalho*/
-    .menu-desktop ul, .categoria-barra, .search-bar, .btn-icones{
+    .menu-topo ul, .categoria-barra, .search-bar, .btn-icones{
         display: none;
     }
 
