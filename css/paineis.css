@@ -1,0 +1,40 @@
+section.paineis{
+    padding: 0 4%;
+    margin-top: -200px;
+}
+
+section.paineis .flex{
+    gap: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paineis .paineis-box {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: .2s;
+}
+
+.paineis .paineis-box img.desktop-paineis:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+
+.paineis .paineis-box{
+    padding: 40px;
+}
+
+.paineis .paineis-box img.desktop-paineis {
+    width: 110%;
+    height: 90%;
+    cursor: pointer;
+    border-radius: 10px; /* Ajuste o valor conforme desejado */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
