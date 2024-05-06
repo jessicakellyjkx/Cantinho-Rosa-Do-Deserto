@@ -279,7 +279,7 @@ section.slider{
 }
 
 .slider-content{
-    width: 600%;
+    width: 400%;
     height: auto;
     display: flex;
 }
@@ -298,11 +298,6 @@ section.slider{
 
 .slide-box img{
     width: 100%;
-    height: 600px;
-    background-image: url('img_flowers.jpg');
-    background-size: 100% 100%;
-    border: 1px solid red
-
 }
 
 .nav-manual, .nav-auto{
@@ -326,11 +321,11 @@ section.slider{
 }
 
 .nav-manual .manual-btn:hover{
-    background-color: #d42332;
+    background-color: #f87f89;
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
-    background-color: #d42332;
+    background-color: #f87f89;
 }
 
 #radio1:checked ~ .primeiro{
