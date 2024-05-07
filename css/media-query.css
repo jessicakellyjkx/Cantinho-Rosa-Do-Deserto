@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 /* Estilos globais */
-.container {
-  padding: 10px 0 0 0;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding: 10px 0 0 0;
 }
 
 /* Estilos para o ícone de WhatsApp */
@@ -28,14 +28,6 @@
   text-decoration: none;
   z-index: 100;
   box-shadow: 2px 2px 2px #c0bdbd;
-}
-
-
-header .search-bar input {
-  padding: 10px;
-  border: 1px solid #ccccccab;
-  border-radius: 50px;
-  width: 400px;
 }
 
 /* Media queries */
@@ -61,10 +53,10 @@ header .search-bar input {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1100px) {
   .container {
     background-color: white;
-    height: 130.98px;
+    height: 136.98px;
   }
 
   #burguer {
@@ -76,10 +68,7 @@ header .search-bar input {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-
-  #menu > ul > li {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .menu-topo {
@@ -99,12 +88,58 @@ header .search-bar input {
   .menu-topo li {
     margin: 0 15px;
   }
+
+  header .logo img {
+    display: block;
+    position: absolute;
+    left: 231px;
+    top: 0px;
+    width: 127px;
+    height: 127px;
+  }
+
+  .nome h1 {
+    display: block;
+    position: absolute;
+    left: 346px;
+    top: 35px;
+    font-size: 20px;
+    color: #d0525c;
+  }
+
+  .search-bar {
+    display: block;
+    position: absolute;
+    left: 400px;
+    top: 56px;
+  }
+
+  header .search-bar button {
+    display: block;
+    position: absolute;
+    left: 560px;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #d42332;
+  }
+
+  header .search-bar input {
+    border: 1px solid #ccccccab;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 15px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     background-color: white;
-    height: 134.53px;
+    height: 136.53px;
   }
 
   #burguer {
@@ -116,7 +151,7 @@ header .search-bar input {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 54px;
+    font-size: 20px;
   }
 
   .menu-topo ul {
@@ -129,6 +164,7 @@ header .search-bar input {
   .menu-topo li {
     margin: 0 15px;
   }
+
   header .logo img {
     display: block;
     position: absolute;
@@ -137,12 +173,14 @@ header .search-bar input {
     width: 188px;
     height: 173px;
   }
+
   .nome h1 {
     display: block;
     position: absolute;
     left: 410px;
     top: 26px;
     color: #d0525c;
+    font-size: 24px;
   }
 
   .search-bar {
@@ -150,24 +188,35 @@ header .search-bar input {
     position: absolute;
     left: 750px;
     top: 56px;
+    padding: 10px;
   }
+  .btn-icones {
+    display: flex;
+    align-items: center;
+}
 
-
-  header .search-bar button {
-    display: block;
-    position: absolute;
-    left: 440px;
-    top: 5px;
-    background-color: transparent;
+  header .btn-icones button {
+    width: 50px;
+    height: 50px;
     border: none;
+    border-radius: 50px;
+    background-color: #d42332;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    margin-bottom: 610px; /*Altura dos icones*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave para a transformação e para o box-shadow */
+
   }
 
-  .search-bar  button i {
-      color: #d42332;
-      font-size: 22px;
-      margin-left: 20px;
-      background-color: transparent;
+  .btn-icones button:hover {
+    transform: scale(1.05); /* Aumenta a escala em 10% quando o mouse passar por cima */
+    box-shadow: 0 0 10px rgba(252, 11, 111, 0.452); /* Adiciona um efeito de brilho */
   }
 
+  header .btn-icones button i {
+    vertical-align: middle;
+    color: #ffffff;      
+  }
 
 }
