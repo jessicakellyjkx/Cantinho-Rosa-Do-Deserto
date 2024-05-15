@@ -65,6 +65,7 @@
   box-shadow: 0 0 10px rgba(252, 11, 111, 0.452); /* efeito de brilho */
 }
 
+
 /* Media queries */
 @media screen and (min-width: 390px) {
   .container {
@@ -181,30 +182,11 @@
     display: none;
   }
 
-  #menu > ul {
-    background-color: rgb(255, 0, 225);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-  }
-
-  .menu-topo ul {
-    list-style-type: none;
-    display: flex;
-    position: absolute;
-    top: 20px;
-  }
-
-  .menu-topo li {
-    margin: 0 15px;
-  }
-
   header .logo img {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 190px;
+    left: 300px;
     top: 20px;
     width: 180px;
     height: 170px;
@@ -214,7 +196,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    left: 350px;
+    left: 450px;
     top: 80px;
     color: #d0525c;
     font-size: 24px;
@@ -224,8 +206,8 @@
     display: block;
     align-items: center;
     position: absolute;
-    left: 450px;
-    top: 100px;
+    left: 550px;
+    top: 85px;
     padding: 10px;
   }
 
@@ -233,7 +215,7 @@
     display: flex;
     position: absolute;
     align-items: center;
-}
+  }
   header .search-bar input {
     padding: 10px;
     border: 1px solid #ccccccab;
@@ -244,7 +226,7 @@
     display: block;
     position: absolute;
     left: 560px;
-    top: 20px;
+    top: 30px;
     background-color: transparent;
     border: none;
     font-size: 17px;
@@ -253,9 +235,8 @@
 
   .btn-icones {
     justify-content: flex-end;
-    margin-bottom: 610px;
-    left: 1070px;
-    top: 60px;
+    left: 1200px;
+    top: 98px;
     
   }
 
@@ -272,6 +253,25 @@
     align-items: center;
     justify-content: center;
   }
+  
+  #menu >ul{
+    background-color: #d42332;
+    margin-top: -25px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    margin: 0 auto;
+    list-style-type: none;
+  }
 
-
+  #menu > ul > li > a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
 }
