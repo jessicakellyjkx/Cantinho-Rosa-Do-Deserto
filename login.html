@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header id="header">
+
+    <!--Inclui-->
+    <div class="container">
+      <div class="buttonzap">
+        <a href="https://api.whatsapp.com/send?phone=559982100230&" class="icon" target="_blank"><i
+            class="bi bi-whatsapp"></i></a>
+      </div>
+
+      <!--Inclui-->
+      <nav class="menu-topo">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#rodape">Fale Conosco</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="interface">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Logotipo.png" alt="Logotipo">
+          </a>
+        </div><!--logo-->
+        <div class="nome">
+          <h1>Cantinho da<br> Rosa do Deserto</h1>
+        </div><!--nome-->
+
+
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Buscar..." style="width: 500px;">
+          <button id="search-button" type="button"><i class="bi bi-search"></i></button>
+        </div>
+
+
+        <div class="btn-icones">
+          <a href="#"><button><i class="bi bi-basket"></i></button></a>
+          <a href="login.html">
+            <button class="enter-button">
+              <i class="bi bi-person"></i>
+              <span>
+                <h4>Minha Conta</h4>
+              </span>
+            </button>
+          </a>
+        </div>
+
+      </div><!--btn-icones-->
+    </div><!--interface-->
+
+    <div class="categoria-container">
+      <div class="categoria-barra">
+        <nav class="submenu-topo">
+          <ul>
+            <li class="special"><a href="rosasdodeserto.html">Rosas do Deserto</a>
+            </li>
+            <li class="special"><a href="suculentasEcactos.html">Suculentas & Cactos</a>
+            </li>
+            <li class="special"><a href="vasos.html">Vasos & Acessórios</a>
+            </li>
+        
+
+          </ul>
+        </nav>
+      </div><!--categoria-barra-->
+    </div>
+    </div>
+  </header>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Entrar</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="login-username">Nome de Usuário ou E-mail <span>*</span></label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Senha <span>*</span></label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Lembre-me</label>
+                </div>
+                <button type="submit" class="btn">Acessar</button>
+                <a href="#" class="forgot-password">Perdeu sua senha?</a>
+                <p>Acesse ou crie sua conta com login social</p>
+                <button type="button" class="btn-social">
+                    <img src="img/google.png" alt="Google"> Acessar com sua conta Google
+                </button>
+            </form>
+        </div>
+        <div class="register-box">
+            <h2>Cadastre-se</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="register-username">Nome de Usuário <span>*</span></label>
+                    <input type="text" id="register-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Endereço de E-mail <span>*</span></label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Senha <span>*</span></label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Cadastre-se</button>
+            </form>
+        </div>
+    </div>
+    <footer class="rodape" id="rodape">
+      <div class="container">
+        <div class="logo">
+          <img src="img/Logotipo.png" alt="Logotipo">
+          <div class="nome-rodape">
+            <h1>Cantinho da Rosa do Deserto</h1>
+          </div>
+        </div>
+  
+        <div class="pagamentos">
+          <h2>Pagamentos Disponíveis</h2>
+          <a href=""><button><i class="bi bi-x-diamond-fill"></i></button>Pix</a>
+          <a href=""><button><i class="bi bi-credit-card"></i></button>Crédito</a>
+        </div>
+  
+        <div class="redes-sociais">
+          <h2>Redes Sociais</h2>
+          <a href=""><button><i class="bi bi-instagram"></i></button></a>
+          <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+          <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+        </div>
+  
+        <div class="fale-conosco">
+          <h2>Contato</h2>
+          <a href=""><button><i class="bi bi-whatsapp"></i></button>WhatsApp</a>
+          <a href=""><button><i class="bi bi-envelope"></i></button>E-mailㅤㅤ</a>
+  
+  
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

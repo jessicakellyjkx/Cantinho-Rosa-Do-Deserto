@@ -34,7 +34,7 @@ section.paineis .flex{
     width: 110%;
     height: 90%;
     cursor: pointer;
-    border-radius: 10px; /* Ajuste o valor conforme desejado */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border-radius: 10px;
+    margin: 0 auto; 
 }
 
